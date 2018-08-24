@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>最美中国</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="js/swiper.min.css">
+</head>
+<body>
+<div id="y_login">
+
+    <div class="y_login_cont">
+        <div class="y_login_close" onclick="registr()"></div>
+       <div class="y_count">
+           <input type="text"  placeholder="用户名" maxlength="16" minlength="8">
+           <input type="password"  placeholder="密码" maxlength="8" minlength="6">
+           <div class="y_pwd">
+               <lable for="pwd">记住密码</lable>
+               <input id="pwd" onClick="checkBox()" type="checkbox" name="pwd">
+           </div>
+           <button>登录</button>
+           <button onClick="registr()">注册</button>
+       </div>
+    </div>
+    <div class="y_registr">
+        <div class="y_reg_close" onclick="reg_close()"></div>
+        <div class="y_reg">
+            <input type="text" placeholder="设置用户名" maxlength="16" minlength="8">
+            <input type="text" placeholder="电子邮箱" maxlength="16" minlength="8">
+            <input type="text" placeholder="请设置密码" maxlength="16" minlength="8">
+            <input type="text" placeholder="再次确认密码" maxlength="16" minlength="8">
+            <input   id="codenumber"type="text" placeholder="验证码">
+
+            <div class="box">
+                <canvas id="canvas"></canvas>
+                <!--<button class="btn"  onClick="checkCode()">确认</button>-->
+            </div>
+
+            <button onClick="checkCode()">完成注册</button>
+        </div>
+    </div>
+</div>
+
+
+
+            <!--特色主题游-->
+<div class="y_information">
+    <h2>特色主题游</h2>
+    <div class="y_themeList">
+        <ul>
+            <li><a href="javascript:void(0);">
+                <img src="images/14900765898922007.jpg" alt="">
+                <span class="title">江南水乡</span>
+                <div class="y_background"></div>
+                <div class="bg">
+                    <h3>江南水乡</h3>
+                    <p>查看详情</p>
+                </div>
+            </a>
+            </li>
+            <li><a href="javascript:void(0);">
+                <img src="images/14900763908698228.jpg" alt="">
+                <span class="title">岭南风光</span>
+                <div class="y_background"></div>
+                <div class="bg">
+                    <h3>江南水乡</h3>
+                    <p>查看详情</p>
+                </div>
+            </a></li>
+            <li><a href="javascript:void(0);">
+                <img src="images/14900765165316580.jpg" alt="">
+                <span class="title">千年运河</span>
+                <div class="y_background"></div>
+                <div class="bg">
+                    <h3>江南水乡</h3>
+                    <p>查看详情</p>
+                </div>
+            </a></li>
+            <li><a href="javascript:void(0);">
+                <img src="images/14900764566162231.jpg" alt="">
+                <span class="title">丝绸之路</span>
+                <div class="y_background"></div>
+                <div class="bg">
+                    <h3>江南水乡</h3>
+                    <p>查看详情</p>
+                </div>
+            </a></li>
+            <li><a href="javascript:void(0);">
+                <img src="images/14900766966317971.jpg" alt="">
+                <span class="title">世界遗产</span>
+                <div class="y_background"></div>
+                <div class="bg">
+                    <h3>江南水乡</h3>
+                    <p>查看详情</p>
+                </div>
+            </a></li>
+            <li><a href="javascript:void(0);">
+                <img src="images/1490076763464871.jpg" alt="">
+                <span class="title">香格里拉</span>
+                <div class="y_background"></div>
+                <div class="bg">
+                    <h3>江南水乡</h3>
+                    <p>查看详情</p>
+                </div>
+            </a></li>
+        </ul>
+        <a href="###" id="y_more" class="y_more">查看更多</a>
+    </div>
+</div>
+
+
+<div class="y_list">
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/c1.jpg" alt="">
+                <img src="images/7.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/9.jpg" alt="">
+                <img src="images/2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="y_Right">
+        <div class="y_Right_Top">
+            <div class="swiper-wrapper">
+                <div class="y_background">美食美景</div>
+                <div class="swiper-slide">
+                    <img src="images/f1.jpg" alt="">
+                    <img src="images/f2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/f3.jpg" alt="">
+                    <img src="images/f4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="y_Right_Bottom">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/c4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/c5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+            <!-- 民族风情部分 -->
+
+<div class="y_customs">
+    <h2>民族风情</h2>
+    <p>
+        中国自古以来就是一个统一的多民族国家。新中国成立后，通过识别并经中央政府确认的民族共有56个，其中汉族是第一大族群，占中国总人口的91.51%。其他<br>民族比较少，占8.49%，因此习惯上被称为少数民族...
+    </p>
+    <a href="###" class="y_customsmore">查看详情</a>
+    <div class="y_customsbox">
+        <div class="y_bannern">
+            <a href="javascript:;">
+                <img src="images/mzbanner1.jpg" alt="名族风情">
+                <p>藏族</p>
+            </a>
+        </div>
+        <div class="y_bannern">
+            <a href="javascript:;">
+                <img src="images/mzbanner2.jpg" alt="名族风情">
+                <p>维吾尔族</p>
+            </a>
+        </div>
+        <div class="y_bannern">
+            <a href="javascript:;">
+                <img src="images/mzbanner3.jpg" alt="名族风情">
+                <p>苗族</p>
+            </a>
+        </div>
+        <div class="y_bannern">
+            <a href="javascript:;">
+                <img src="images/mzbanner4.jpg" alt="名族风情">
+                <p>壮族</p>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper_auto.js"></script>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/index.js"></script>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+/*
+    function sum() {
+       var num = 1;
+
+        for (var i = 1; i <100; i++) {
+
+           if (i%15===0){
+               console.log(arguments.callee());
+             return  i+arguments.callee();
+               console.log(arguments.callee());
+           }
+            return num;
+        }
+    }
+
+    console.log(sum());
+*/
+    // var b=(function(n){
+    //     if(n%15===0){
+    //         return n+arguments.callee(n-1);
+    //         return 0;
+    //     }
+    // })(100);
+    // alert(b);
+
+
+/*
+function fn(num) {
+        if (num>100){
+            return 0;
+        }
+        if(num%15===0){
+            return num + fn(num+1);
+
+        }
+        return fn(num+1);
+}
+
+    console.log(fn(1));
+*//*
+function num(n){
+    if( n<=0 ){ return 0 }
+    //return n + num ( n-1 )
+    return n + arguments.callee ( n-1 )
+}
+num( 100 );
+*/
+
+
+function num(n){
+    if( n<=0 ){ return 0 }
+    console.log(arguments.callee);
+   if(n%15===0){
+
+
+       return n + arguments.callee ( n-1 );
+   }
+
+}
+
+console.log(num(100));
+function unique(){
+    var obj = {};
+    for (let i = 0; i < arguments.length; i++) {
+            var cur = this[i];
+            if(obj[cur] ===cur){
+                this[i] = this[this.length-1];
+                this.length--;
+                i--;
+                continue;
+            }
+            obj[cur] = cur;
+    }
+}
+
+
+function push(){
+    for (let i = 0; i < arguments.length; i++) {
+       this[this.length] = arguments[i];
+        return this.length
+    }
+}
+/***********************/
+
+function num(n){
+    if(n<=0){
+        return 0;
+    }
+    if(n%15===0){
+        return n+arguments.callee(n-1);
+    }else{
+        return arguments.callee(n-1);
+    }
+}
+console.log(num(100));
+
+
+</script>
+</html>
